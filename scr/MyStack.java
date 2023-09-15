@@ -46,7 +46,7 @@ public class MyStack<E> {
 public E peek(){
         return (E) (elementData[0]!=null?elementData[size-1]:null);
 }
-public E poll(){
+public E pop(){
 
     if (elementData[0]!=null) {
         E f= (E)elementData[size-1];

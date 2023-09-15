@@ -21,6 +21,19 @@ public class Main {
         ss.put("x","eee");
         ss.put("m","eefde");
         System.out.println(ss);
-
+MyStack<String> stack= new MyStack<>();
+stack.push("1");
+        stack.push("2");
+        stack.push("3");
+        stack.push("4");
+        stack.push("5");
+        stack.push("6");
+        stack.push("7");
+        stack.push("8");
+        stack.push("9");
+        System.out.println(stack.pop());
+        stack.remove(7);
+        System.out.println(stack.pop());
+        System.out.println(stack.size());
     }
 }

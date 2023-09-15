@@ -1,4 +1,4 @@
-import java.util.EmptyStackException;
+
 import java.util.Objects;
 
 public class MyQueue<E> {
