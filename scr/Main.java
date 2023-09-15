@@ -1,27 +1,20 @@
+import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.Queue;
+
 public class Main {
     public static void main(String[] args) {
 
-//        MyArrayList<String>list=new MyArrayList<String>();
-//        list.add(" ghfhhgh ");
-//        list.add("ff ");
-//        list.add("hhhfhhgh ");
-//      //  list.clear();
-//        System.out.println(list.get(1));
-
-        MyStack<String> stt =new MyStack<>();
-        stt.push("Privit" );
-        stt.push("from");
-        stt.push("Java" );
-        stt.push("my");
-        stt.push("dear" );
-        stt.push("Friend");
-        stt.push("!" );
-        stt.push("Cn");
-        stt.remove(9);
-
-
-
-        System.out.println(stt);
+        MyHashMap<String,String> ss = new MyHashMap<>();
+        ss.put("a","eee");
+        ss.put("b","ee");
+        ss.put("c","eee");
+        ss.put("y","eee");
+        ss.put("j","hghg");
+        ss.put("h","eee");
+        ss.put("g","eefde");
+        ss.remove("h");
+        System.out.println(ss.get("g"));
 
     }
 }
