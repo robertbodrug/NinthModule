@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class MyHashMap <K,V>{
@@ -78,11 +77,32 @@ public int size(){return size;}
 
         }
     }
+    public void clean(){
+        nodesData= new Node[DEFAULT_SIZE];
+        size=0;
+    }
     @Override
     public String toString() {
-        return "MyHashMap{" +
-                "nodesData=" + Arrays.toString(nodesData) +
-                '}';
+       StringBuilder sb= new StringBuilder();
+        for (Node node:nodesData) {
+            if(node!=null){
+                sb.append(node);
+                sb.append("\n");
+                if(node.next!=null){
+                    Node n = node.next;
+                    while(n!=null){
+                        sb.append(n);
+                        sb.append("\n");
+                        n=n.next;
+                    }
+                }
+                sb.append("***************");
+                sb.append("\n\n");
+
+            }
+        }
+
+        return sb.toString();
     }
 
     static class Node<K,V> {

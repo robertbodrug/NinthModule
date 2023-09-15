@@ -12,9 +12,15 @@ public class Main {
         ss.put("y","eee");
         ss.put("j","hghg");
         ss.put("h","eee");
-        ss.put("g","eefde");
-        ss.remove("h");
-        System.out.println(ss.get("g"));
+        ss.put("y","eefde");
+        ss.put("i","eee");
+        ss.put("o","ee");
+        ss.put("p","eee");
+        ss.put("l","eee");
+        ss.put("h","hghg");
+        ss.put("x","eee");
+        ss.put("m","eefde");
+        System.out.println(ss);
 
     }
 }
