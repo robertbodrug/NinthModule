@@ -8,23 +8,20 @@ public class Main {
 //      //  list.clear();
 //        System.out.println(list.get(1));
 
-        MyQueue<String> stt =new MyQueue<>();
-        stt.add("Privit" );
-        stt.add("from");
-        stt.add("Java" );
-        stt.add("my");
-        stt.add("dear" );
-        stt.add("Friend");
-        stt.add("!" );
-        stt.add("Cn");
+        MyStack<String> stt =new MyStack<>();
+        stt.push("Privit" );
+        stt.push("from");
+        stt.push("Java" );
+        stt.push("my");
+        stt.push("dear" );
+        stt.push("Friend");
+        stt.push("!" );
+        stt.push("Cn");
+        stt.remove(9);
 
-stt.clear();
-        System.out.println(stt.poll());
-        System.out.println(stt.peek());
-        System.out.println(stt.poll());
-        System.out.println(stt.poll());
-        System.out.println(stt.poll());
-        System.out.println(stt.poll());
-        System.out.println(stt.poll());
+
+
+        System.out.println(stt);
+
     }
 }
