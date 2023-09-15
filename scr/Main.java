@@ -33,6 +33,7 @@ stack.push("1");
         stack.push("9");
         System.out.println(stack.pop());
         stack.remove(7);
+
         System.out.println(stack.pop());
         System.out.println(stack.size());
     }
